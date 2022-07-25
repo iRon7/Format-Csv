@@ -1,5 +1,28 @@
 # Format-Csv
 
+## Example
+
+```PowerShell
+$Csv = @'
+"Name","Number","Object","Remark"
+"One","1","Text","Normal"
+"Two","2","123","Number"
+"Three","3","Te,xt","Comma in Text"
+"Four","4","Te""xt","Double quote in text"
+,,,"Empty ($Null)"
+"Five","5","More","Normal"
+'@
+
+$Csv |Format-Csv
+Name,  Number, Object,   Remark
+One,        1, Text,     Normal
+Two,        2, 123,      Number
+Three,      3, "Te,xt",  "Comma in Text"
+Four,       4, "Te""xt", "Double quote in text"
+,            , ,         "Empty ($Null)"
+Five,       5, More,     Normal
+```
+
 .SYNOPSIS
 Formats (aligns) a Csv table
 
