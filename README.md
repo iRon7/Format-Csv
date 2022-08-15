@@ -101,9 +101,6 @@ attached to each delimiter.
 | Accept wildcard characters: | false |
 ## [Inputs](#inputs)
 ### Csv (here) string or object list
- This switch will remove the leading space (only added when the -Quote switch is set) and trailing space  
-attached to each delimiter.
-
 ## [Outputs](#outputs)
 ### [String[]](https://docs.microsoft.com/en-us/dotnet/api/System.String[])
 ## [Related Links](#related-links)
