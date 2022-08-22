@@ -7,8 +7,6 @@ $AliasName = [System.IO.Path]::GetFileNameWithoutExtension($MyPath.Name) -Replac
 $ScriptName = [System.IO.Path]::ChangeExtension($AliasName, 'ps1')
 $ScriptPath = Join-Path $MyPath.DirectoryName $ScriptName
 
-Write-Host 123 $ScriptPath
-
 Set-Alias -Name $AliasName -Value $ScriptPath
 
 Describe 'Format-Csv' {
